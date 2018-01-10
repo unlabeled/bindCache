@@ -1,6 +1,6 @@
 {
   "name": "bindcache",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cache result of bind function with its context or/and args",
   "main": "index.js",
   "scripts": {
