@@ -1,6 +1,6 @@
 ## BindCache ##
 
-It **caches/memoizes** result of binding function with its context and args. For the same set it will return identical result every next time.
+It **caches/memoizes** result of binding function with its context and args. For the same set it returns identical result every time.
 
 
 ## Motivation ##
@@ -35,9 +35,9 @@ If you don't need context:
 bindArgs(fn: () => void, args?: any | Array<any>)
 ```
 
-- **context** — context
-- **fn** — function to bind
-- **args** — any number of arguments of any type 
+- **context** — context,
+- **fn** — function to bind,
+- **args** — any number of arguments of any type.
 
 
 ## Usage ##
@@ -89,7 +89,7 @@ class MyComponent extends Component {
 
 ## How it works ##
 
-The util caches result of binding in native WeakMap so the items with no references can be garbage collected.
+The util caches results of binding in native WeakMap so the items with no references can be garbage collected.
 
 ## Tips ##
 
