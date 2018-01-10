@@ -1,0 +1,39 @@
+{
+  "name": "bindcache",
+  "version": "0.0.1",
+  "description": "Cache result of bind function with its context or/and args",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/unlabeled/bindCache.git"
+  },
+  "keywords": [
+    "ES2015",
+    "momize",
+    "bind"
+  ],
+  "author": {
+    "name": "Timofey Tkachenko",
+    "email": "ttimatika@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unlabeled/bindCache/issues"
+  },
+  "homepage": "https://github.com/unlabeled/bindCache#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "lint-staged": "^6.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.10.1"
+  },
+  "dependencies": {}
+}
