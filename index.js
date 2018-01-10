@@ -1,7 +1,7 @@
 const cached = new WeakMap()
 
 /**
- * Check if arrays are equal
+ * Check if arrays of args are equal
  *
  * @param {Array} firstParams
  * @param {Array} secondParams

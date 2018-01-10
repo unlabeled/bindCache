@@ -7,6 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pre-commit": "lint-staged"
   },
+  "pre-commit": [
+    "pre-commit"
+  ],
+  "lint-staged": {
+    "*.@(js|jsx|ts|tsx)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/unlabeled/bindCache.git"
