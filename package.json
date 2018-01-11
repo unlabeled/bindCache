@@ -1,7 +1,7 @@
 {
   "name": "bindcache",
   "version": "0.0.3",
-  "description": "Cache result of bind function with its context or/and args",
+  "description": "Cache/memoize result of bind function with its context or/and args",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

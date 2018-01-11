@@ -32,18 +32,18 @@ function isEqual(firstParams, secondParams) {
  * @param {Array} args
  */
 export function bindArgs(fn, ...args) {
-  return bind(fn, undefined, args)
+  return bind(undefined, fn, ...args)
 }
 
 /**
  * Cache binded function result with its params
  *
- * @param {Function} fn
  * @param {Any} context
+ * @param {Function} fn
  * @param {Array} args
  * @returns {Function}
  */
-export function bind(fn, context, ...args) {
+export function bind(context, fn, ...args) {
   if (!fn) {
     throw new CaughtException(
       "You called BindCache utils with no or undefined function"
