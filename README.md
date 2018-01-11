@@ -95,7 +95,7 @@ The util caches results of binding in native WeakMap so the items with no refere
 
 ## Tips ##
 
-`bind` util lets you feed it with context for the function. But it is better not to use it since it will take more memory and be slower. Use `bindArg` or `bind` with undefined context. To do that to use arrow function (as it was shown above), or bind context once with decorator:
+`bind` util lets you feed it with context for the function. But it is better not to use that option since it will take more memory and be slower. Use `bindArg` or `bind` with undefined context. You can use arrow function (as it was shown above), or bind context once with decorator:
 ```javascript
 class MyComponent extends Component {
     @autoBind
@@ -105,7 +105,7 @@ class MyComponent extends Component {
     // ...
 }
 ```
- or cache the resultof binding in constructor:
+ or cache the result of binding in constructor:
  ```javascript
 class MyComponent extends Component {
     constructor(props) {
