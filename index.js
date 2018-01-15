@@ -85,10 +85,3 @@ function isEqual(firstParams, secondParams) {
   }
   return condition
 }
-
-function abc(a, b, c) {}
-const obj = { param: "1" }
-console.log(bind(obj, abc, 1, 2, 3) === bind(obj, abc, 1, 2, 3))
-console.log(bind(obj, abc, 1, 2, 3, 4) === bind(obj, abc, 1, 2, 3))
-console.log(bind(obj, abc, 1, 2, 3, 4) === bind(obj, abc, 1, 2, 3, 4))
-console.log(bind(obj, abc, 1, 2, 3) === bind(obj, abc, 1, 2, 3))
