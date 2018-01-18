@@ -1,7 +1,7 @@
 {
   "name": "bindcache",
   "version": "0.1.4",
-  "description": "Cache/memoize result of bind function with its context or/and args",
+  "description": "Cache/memoize result of bind function with its context or/and args (with shims)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,6 +35,9 @@
     "url": "https://github.com/unlabeled/bindCache/issues"
   },
   "homepage": "https://github.com/unlabeled/bindCache#readme",
+  "dependencies": {
+    "cachebind": "0.0.2"
+  },
   "devDependencies": {
     "lint-staged": "^6.0.0",
     "pre-commit": "^1.2.2",

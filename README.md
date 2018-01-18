@@ -2,6 +2,7 @@
 
 It **caches/memoizes** result of binding function with its context and args. For the same set it returns identical result every time.
 
+> This version uses es6-map and es6-weak-map shims from your peerDependencies. If you don't need them or you use other shims for Map and WeakMap you should use [cachebind](https://www.npmjs.com/package/cachebind) instead of this.
 
 ## Motivation ##
 It solves the problem of unnecessary renders for React in cases of usage arrow function or `Function.prototype.bind` in render method. It also keep up with `jsx-no-bind` rule which is used to detact such issues.
