@@ -36,13 +36,14 @@
   },
   "homepage": "https://github.com/unlabeled/bindCache#readme",
   "dependencies": {
-    "cachebind": "0.0.2"
+    "cachebind": "^1.0.0"
   },
   "devDependencies": {
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^7.0.4",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.10.1",
-    "webpack": "^3.x"
+    "prettier": "^1.12.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
   },
   "peerDependencies": {
     "es6-map": "^0.1.5",
