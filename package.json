@@ -2,11 +2,11 @@
   "name": "bindcache",
   "version": "0.1.5",
   "description": "Cache/memoize result of bind function with its context or/and args (with shims)",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "pre-commit": "lint-staged",
-    "start": "webpack --watch"
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "pre-commit": [
     "pre-commit"
