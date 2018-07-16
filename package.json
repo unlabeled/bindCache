@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/unlabeled/bindCache#readme",
   "dependencies": {
-    "cachebind": "^1.0.1"
+    "cachebind": "^2.0.1"
   },
   "devDependencies": {
     "lint-staged": "^7.2.0",
