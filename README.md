@@ -5,7 +5,7 @@ It **caches/memoizes** result of binding function with its context and args. For
 > This version uses es6-map and es6-weak-map shims from your peerDependencies. If you don't need them or you use other shims for Map and WeakMap you should use [cachebind](https://www.npmjs.com/package/cachebind) instead of this.
 
 ## Motivation ##
-It solves the problem of unnecessary renders for React in cases of usage arrow function or `Function.prototype.bind` in render method. It also keep up with `jsx-no-bind` rule which is used to detact such issues.
+It solves the problem of unnecessary renders cased by use of `Function.prototype.bind` function in render method. It also keep up with `jsx-no-bind` rule which is used to detect such issues.
 
 ```javascript
 class MyComponent extends Component {
@@ -82,7 +82,7 @@ class MyComponent extends Component {
             <div>
                 <SomeComponent someParam={"value"}>
                 <OtherComponent callback={bindArgs(this.onChange, param, "MyComponent")}/>
-            </div>    
+            </div>
         )
     }
 }
@@ -96,7 +96,7 @@ The util caches results of binding in native WeakMap so the items with no refere
 
 ## Tips ##
 
-`bind` util lets you feed it with context for the function. But it is better not to use that option since it will take more memory and be slower. Use `bindArg` or `bind` with undefined context. You can use arrow function (as it was shown above), or bind context once with decorator:
+`bind` util lets you feed it with context for the function. You can use arrow function (as it was shown above), or bind context once with decorator:
 ```javascript
 class MyComponent extends Component {
     @autoBind
@@ -121,4 +121,4 @@ class MyComponent extends Component {
 }
 ```
 
-It is not suggested to use this utils instead of `Function.prototype.bind` in every case. The original bind function is still faster. For example if you need to bind context with no args or your params are static for the component you can bind it one time in constructor function. But it will help you great deal in case of unnecessary renders of react components.
+> It is not suggested to use this utils instead of `Function.prototype.bind` in every case. The original bind function is still faster. For example if you need to bind context with no args or your params are static for the component you can bind it one time in constructor function. But it will help you great deal in case of unnecessary renders of react components.
